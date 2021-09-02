@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Special Elite', cursive;
+}
+
+h1,
+h2{
+    text-align: center;
+    margin: 2rem auto;
+
+}
+
+
+
+#books-container{
+    margin-top: 1rem;
+    margin: auto;
+    max-width: 1350px;
+    padding: .5rem;
+    display: grid;
+    justify-items: normal;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: .5rem;
+    background-color: beige;
+    justify-content: space-evenly;
+}
+
+.no-books{
+    text-align: center;
+}
+
+.book{
+    text-align: right;
+    padding: 2rem 1.2rem;
+    border: 5px solid black;
+    background-color: white;
+    width: 267px;
+    display: block;
+    position: relative;
+}
+
+.float-btn{
+    background-color: rgb(196, 196, 196);
+    position: absolute;
+    width: 15%;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.read{
+    
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.read:hover{
+    cursor: pointer;
+    background-color: rgb(106, 153, 255);
+}
+
+.trash{
+    top: 0;
+    left: 0;
+}
+
+.trash:hover{
+    cursor: pointer;
+    background-color: coral;
+}
+
+#reveal-form{
+    padding-top: 0.3rem;
+    margin-top: 1rem;
+    background:rgb(81, 212, 81);
+    border: 5px solid;
+    border-color: rgb(81, 212, 81);
+    outline: none;
+
+    transition:all 0.5s ease;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+#reveal-form:hover{
+    background: rgb(255, 255, 255);
+    border: 5px solid rgb(81, 212, 81);
+    cursor: pointer;
+    color: black;
+}
+
+.form-container{
+    display: grid;
+    width: 75%;
+    max-width: 900px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .20rem;
+    margin: auto;
+    transition:all .5s ease;
+    opacity: 1;
+}
+
+form input{
+    font-size: 1.4rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.form-element{
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid black;
+    padding: 1rem;
+    
+}
+
+button{
+    display:block;
+    margin: auto;
+    margin-top: .20rem;
+    height: 3rem;
+    width: 37.5%;
+    margin-bottom: 1rem;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translate(0px, 100px) ;
+    transition: all .5s ease;
+}
+

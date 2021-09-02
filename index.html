@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Eric's Library</title>
+</head>
+<body>
+    <h1>Welcome to my house of knowledge.</h1>
+    <h2>Parse my shelves....</h2>
+
+    <div id="books-container"></div>
+    <button id="reveal-form">Add a book</button>
+    <form class="hidden" id="new-book" name="new-book">
+        <div class="form-container">
+            <div class="form-element title">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="ex. The Hobbit">
+            </div>
+            <div class="form-element author">
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" placeholder="ex. J.R.R Tolkein">
+            </div>
+            <div class="form-element pages">
+                <label for="pages">Pages</label>
+                <input type="number" name="pages" id="pages" value="100">
+            </div>
+            <div class="form-element status">
+                <div>
+                    <input class="radio" type="radio" name="status" id="read" value='true'>
+                    <label for="read">Read</label>
+                </div>
+                <div>
+                    <input class="radio" type="radio" name="status" id="unread" value='false' checked>
+                    <label for="unread">Unread</label>
+                </div>
+                
+            </div>
+        </div>
+        <input type="submit" class="submit-form" value="submit"></input>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
